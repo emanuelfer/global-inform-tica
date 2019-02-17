@@ -1,0 +1,55 @@
+.detalhe-area{
+	width: 100%;
+	height: 650px;
+	background-image: linear-gradient(to bottom, white, grey);
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+
+}
+
+.detalhe{
+	height: 100%;
+	width: 980px;
+	margin: auto;
+}
+
+.topo-area{;
+	width: 850px;
+	height: 50%;
+	margin: auto;
+	
+}
+
+.fotoproduto{
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	float: left;
+}
+
+.fotoproduto img{
+	margin-top: 50px;
+}
+
+
+.especificacaoproduto{
+	width: 50%;
+	height: 50%;
+	
+	text-align: center;
+	float: right;
+}
+
+.especificacaoproduto h2{
+	margin-top: 50px;
+}
+
+.descricaoproduto{
+	margin-top: 50px;
+	float: left;
+}
+
+.administrador-area{
+	float: right;
+	margin-top: 25px;
+}

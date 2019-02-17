@@ -1,0 +1,23 @@
+.sobrenos-area{
+	width: 100%;
+	min-height: 600px;
+	display: inline-block;
+
+}
+
+.sobrenos{
+	width: 980px;
+	min-height: 600px;
+	margin: auto;
+	text-align: justify;
+}
+
+h1{
+	padding-top: 20px;
+}
+
+.sobrenos img{
+	float: left;
+	width: 450px;
+	height: 260px;
+}

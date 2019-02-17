@@ -1,0 +1,126 @@
+body{
+	margin: 0;
+	padding: 0;
+	margin-top: 0;
+}
+.header{
+	width: 100%;
+	height: 38px;
+	background-color: #f4f4f4;
+}
+.header-list{
+	margin: auto;
+	width: 980px;
+	height: 38px;
+}
+.header-list ul{
+	margin: 0px;
+	padding: 0px;
+	height: 38px;
+}
+.header-list ul li a{
+	text-decoration: none;
+	color: #888888;
+}
+.header-list ul li { 
+	float: right;
+	height: 38px;
+	line-height: 38px;
+	margin-left: 50px;
+	display: inline; 
+}
+.header-list h3{ 
+	margin: 0;
+	float: left;
+	line-height: 38px; 
+	font-family: cursive;
+}
+
+.header-list ul li a:hover {
+    color: #6bc4b0;
+    text-decoration: underline;
+	cursor: pointer;
+}
+
+.header-logo{
+	height: 147px;
+	width: auto;
+}
+.logo{
+	margin: auto;
+	width: 980px;
+}
+.menuprincipal{
+	width: 100%;
+	height: 60px;
+	background-color: #fbfbfb;
+}
+.menulist{
+	color: #888888;
+	width: 980px;
+	margin:auto;
+	height: 60px;
+}
+.menulist ul{
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+}
+
+.menulist a{
+	color: #888888;
+	text-decoration: none;
+}
+.menulist a:hover{
+	color: white;
+}
+.menulist ul li{ 
+	padding-left: 9px;
+	padding-right: 9px;
+	height: 60px;
+	line-height: 60px;
+	display: inline-block; 
+}
+.menulist ul li:hover {
+	background-color: #5a88ca;
+    color: white;
+	cursor: pointer;
+}
+
+.fixo {
+ 	position: fixed;
+ 	top: 0px;;
+}
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+	text-align: center;
+	display: block;
+	
+}
+.rodape{
+	height: 100%;
+	width:980px;
+	margin: auto;
+	background-color: #333;
+	display: flex;
+   justify-content: center;
+}
+.rodape ul{
+	color: aliceblue;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	line-height: 60px;
+}
+.rodape li{
+	margin-right: 70px;
+	list-style: none;
+	float: left;
+	
+}
+.rodape a{
+	color: aliceblue;
+	text-decoration-style: none;
+}

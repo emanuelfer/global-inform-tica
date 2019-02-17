@@ -1,0 +1,32 @@
+.busca-area{
+	width: 100%;
+	display: inline-block;
+	min-height: 600px;
+}
+.busca{
+	width: 980px;
+	height: 100%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.busca input{
+	margin-left: 170px;
+	border-radius: 4px;
+}
+
+.busca button{
+	border-radius: 4px;
+}
+
+
+.item{
+	margin-top: 30px;
+	margin-right: 60px;
+	float: left;
+	text-align: center;
+	color: black;
+	display: block;
+}
+
+
