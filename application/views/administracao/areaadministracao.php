@@ -56,7 +56,7 @@
 				<h1>Área Administrativa</h1>
 				<a href="cadastro"><button>Adicionar Produto</button></a>
 				<a href="pesquisar"><button>Buscar Produto</button></a>
-				<button>Alterar Produto</button>
+				<a href="pesquisar"><button>Alterar Produto</button></a>
 				<a href="pesquisar"><button>Remover Produto</button></a>
 			</div>
 		</div>
