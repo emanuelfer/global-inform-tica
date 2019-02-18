@@ -28,6 +28,8 @@
 }
 
 .fotoproduto img{
+	max-width: 450px;
+	max-height: 325px;
 	margin-top: 50px;
 }
 
