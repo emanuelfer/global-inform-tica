@@ -67,7 +67,7 @@
 			<div class="produtos">
 				<?php foreach ($produtos as $produto) :?>
 					<a href="detalhe?id=<?=$produto['id']?>"><div class="item">
-						<img src="<?php echo base_url(); ?>assets/imagens/<?php echo $produto['foto'] ?>" width="90" height="127">
+						<img src="<?php echo base_url(); ?>assets/imagens/<?php echo $produto['foto'] ?>" >
 						<h6><?= $produto['nome']?></h6>
 						<h6><?= reais($produto['preco']);?></h6>
 				</div></a>
