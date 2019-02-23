@@ -63,7 +63,7 @@
 
 			<div class="slider">
 				<ul>
-					<a href="#">
+					<a href="detalhe?id=12">
 						<li>
 							<div class="imagem">
 									<img src="<?php echo base_url(); ?>assets/imagens/pc1.jpg" width="496" height="410" style="float: left; margin-right: 100px;">
@@ -75,7 +75,7 @@
 							</div>
 						</li>
 					</a>
-					<a href="#">
+					<a href="detalhe?id=13">
 						<li>
 							<div class="imagem">
 									<img src="<?php echo base_url(); ?>assets/imagens/pc2.jpg" width="469" height="348" style="float: left; margin-right: 100px;">
@@ -87,7 +87,7 @@
 							</div>
 						</li>
 					</a>
-					<a href="#">
+					<a href="detalhe?id=14">
 						<li>
 							<div class="imagem">
 									<img src="<?php echo base_url(); ?>assets/imagens/cel1.jpg" width="300" height="368" style="float: left; margin-right: 170px; margin-left: 100px;">
@@ -106,25 +106,25 @@
 		<div class="lancamentos-area">
 			<div class="lancamentos">
 				<h1>Lançamentos</h1><br>
-				<a href="#">
+				<a href="detalhe?id=16">
 					<div class="itens">
 						<img src="<?php echo base_url(); ?>assets/imagens/product-1.jpg"><br>
 						Samsung Galaxy S
 					</div>
 				</a>
-				<a href="#">
+				<a href="detalhe?id=15">
 					<div class="itens">
 						<img src="<?php echo base_url(); ?>assets/imagens/product-2.jpg"><br>
 						Nokia Lumia 920
 					</div>
 				</a>
-				<a href="#">
+				<a href="detalhe?id=6">
 					<div class="itens">
 						<img src="<?php echo base_url(); ?>assets/imagens/product-3.jpg"><br>
 						LG Prime Y
 					</div>
 				</a>
-				<a href="#">
+				<a href="detalhe?id=7">
 					<div class="itens">
 						<img src="<?php echo base_url(); ?>assets/imagens/product-4.jpg"><br>
 						Sony Experience Z

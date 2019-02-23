@@ -16,7 +16,8 @@
 	margin-right: 60px;
 	min-height: 200px;
 	max-height: 210px;
-	max-width: 150px;
+	min-width: 90px;
+	max-width: 100px;
 	float: left;
 	text-align: center;
 	color: black;
