@@ -12,7 +12,6 @@ class LoginAdministrador extends CI_Controller {
 		
 		var_dump($administrador);
 		if($administrador){
-			$this->session->set_userdata("usuario_logado", $administrador);
 			$this->session->set_userdata("administrador", $administrador);
 			$this->session->flashdata("success");
 			$this->session->set_userdata("nome", $administrador['nome']);

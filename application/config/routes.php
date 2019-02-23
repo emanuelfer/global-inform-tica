@@ -63,3 +63,6 @@ $route['detalhe'] = 'produto/detalhe';
 $route['pesquisar'] = 'produto/pesquisar';
 $route['editar'] = 'produto/editar';
 $route['sobrenos'] = 'gerenciadortela/sobrenos';
+$route['desejo'] = 'produto/listadedesejos';
+$route['listadesejo'] = 'gerenciadortela/exibirDesejos';
+$route['removerdesejo'] = 'produto/removerDesejo';

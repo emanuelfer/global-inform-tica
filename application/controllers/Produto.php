@@ -27,6 +27,15 @@ class Produto extends CI_Controller {
 		$this->load->model("produto_model");
 		$produto = $this->produto_model->retorna($id);
 		$dados = array("produto" => $produto);
+		
+		$usuario = $this->session->userdata("usuario_logado");
+		if($this->produto_model->buscaDesejo($id, $usuario)!=null){
+			$this->session->set_userdata('desejo', true);
+		}
+		else{
+			$this->session->set_userdata('desejo', false);
+		}
+		
 		$this->load->view("produto/detalhe", $dados);
 	}
 	
@@ -62,5 +71,27 @@ class Produto extends CI_Controller {
 			$this->produto_model->salvar($id);
 			$this->session->set_flashdata('success', 'Produto alterado comsucesso!');
 			redirect('compra');
+	}
+	
+	public function listaDeDesejos(){
+		$idProduto = $this->input->get("idProduto");
+		
+		$usuario = $this->session->userdata("usuario_logado");
+		$dados = array("idProduto" => $idProduto,
+					  "idUsuario" => $usuario['id']);
+		$this->load->model("produto_model");
+		$this->produto_model->salvaDesejo($dados);
+		$this->session->set_flashdata('success', 'Adicionado com sucesso!');
+		redirect('compra');
+
+	}
+	
+	public function removerDesejo(){
+		$idProduto = $this->input->get("idProduto");
+		$this->load->model("produto_model");
+		$usuario = $this->session->userdata("usuario_logado");
+		$this->produto_model->removerDesejo($idProduto, $usuario);
+		$this->session->set_flashdata('success', 'Removidado com sucesso!');
+		redirect('compra');
 	}
 }

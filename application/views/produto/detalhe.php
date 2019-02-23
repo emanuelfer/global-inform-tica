@@ -23,7 +23,7 @@
 				</h3>
 				<ul>
 					<li><a><img src="<?php echo base_url(); ?>assets/imagens/user.png" width="16" height="16"> Minha Conta</a></li>
-					<li><a><img src="<?php echo base_url(); ?>assets/imagens/heart.png" width="16" height="16"> Lista de Desejos</a></li>
+					<li><a href="listadesejo"><img src="<?php echo base_url(); ?>assets/imagens/heart.png" width="16" height="16"> Lista de Desejos</a></li>
                     <li><a href="logincliente"><img src="<?php echo base_url(); ?>assets/imagens/user.png" width="16" height="16"> Login</a></li>
 					<li><a href="logincliente/logout"><img src="<?php echo base_url(); ?>assets/imagens/user.png" width="16" height="16"> Sair</a></li>
                 </ul>
@@ -40,8 +40,8 @@
 			<div class="menulist">
 				<ul>
 					<a href="<?php echo base_url(); ?>welcome"><li>HOME</li></a>
-					<a href="<?php echo base_url(); ?>compra"><li >PÁGINA DE COMPRA</li></a>
-					<a href="pesquisar"><li style="background-color: #5a88ca; color: white">PESQUISAR PRODUTO</li></a>
+					<a href="<?php echo base_url(); ?>compra"><li  style="background-color: #5a88ca; color: white">PÁGINA DE COMPRA</li></a>
+					<a href="pesquisar"><li>PESQUISAR PRODUTO</li></a>
 					<a href="sobrenos"><li>SOBRE NÓS</li></a>
 					<?php
 							if($this->session->has_userdata('administrador')):
@@ -74,12 +74,30 @@
 
 					<h5>Descrição: <?php echo $produto['descricao']?></h5>
 				</div>
-				<div class="administrador-area">
+				<div class="opcoes-area">
 					<?php
 						if($this->session->has_userdata('administrador')):
 					?>
 					<a href="<?=base_url('produto/deletar/'.$produto['id']);?>" class="btn btn btn-primary">Deletar Produto</a>
 					<a href="<?=base_url('editar?id='.$produto['id']);?>" class="btn btn btn-primary">Editar Produto</a>
+					<?php
+						endif;
+					?>
+				</div>
+				<div class="opcoes-area">
+					<?php
+						if($this->session->has_userdata('usuario_logado') && !$this->session->userdata('desejo')):
+					?>
+					
+					<a href="<?=base_url('desejo?idProduto='.$produto['id']);?>" class="btn btn btn-primary">Lista de Desejos</a>
+					<?php
+						endif;
+					?>
+					<?php
+						if($this->session->has_userdata('usuario_logado') && $this->session->userdata('desejo')):
+					?>
+					
+					<a href="<?=base_url('removerdesejo?idProduto='.$produto['id']);?>" class="btn btn btn-primary">Remover da Lista de Desejos</a>
 					<?php
 						endif;
 					?>

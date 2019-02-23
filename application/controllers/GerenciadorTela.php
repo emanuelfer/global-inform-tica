@@ -43,4 +43,13 @@ class GerenciadorTela extends CI_Controller {
 	public function sobreNos(){
 		$this->load->view('sobrenos');
 	}
+	
+	public function exibirDesejos(){
+		$this->load->model("produto_model");
+		$usuario = $this->session->userdata("usuario_logado");
+		$lista = $this->produto_model->buscaDesejos($usuario);
+		$dados = array("produtos" => $lista);
+		//echo var_dump($dados);
+		$this->load->view('produto/desejos', $dados);
+	}
 }
