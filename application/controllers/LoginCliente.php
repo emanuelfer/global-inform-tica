@@ -5,6 +5,10 @@ class LoginCliente extends CI_Controller {
 
 	public function autenticar()
 	{
+		$this->session->unset_userdata("administrador");
+		$this->session->unset_userdata("usuario_logado");
+		$this->session->unset_userdata("nome");
+		
 		$this->load->model("cliente_model");
 		$email = $this->input->post("email");
 		$senha = md5($this->input->post("senha"));
